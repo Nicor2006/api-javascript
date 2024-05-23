@@ -83,7 +83,7 @@ app.put("/libros/:id", async (req, res) => {
         titulo: req.body.titulo,
         autor: req.body.autor,
       },
-      { new: true } // Esta opción hará que se devuelva el documento actualizado
+      { new: true } // Esta opción hará que se devuelva el documento actualizado si
     );
 
     if (libro) {
